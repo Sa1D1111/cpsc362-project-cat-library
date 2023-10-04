@@ -1,0 +1,663 @@
+/* Styles for the main container holding the cat breed information and image */
+.cat-breed-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    gap: 20px; /* Added gap to create space between the boxes */
+    display: flex;
+}
+
+
+/* Styles for the container holding the cat image */
+
+.cat-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none; /* Changed from flex: 1 to flex: none to not grow and take the space */
+    width: 300px; /* Set a specific width */
+    height: 250px; /* Set a specific height */
+    margin-right: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.cat-image {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: 100%; /* Ensure the image takes the full height of its container */
+    object-fit: cover; /* This will cover the entire element, and not stretch the image */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+/* Styles for the hover effect on the cat image container */
+.cat-image-container:hover {
+    transform: translateY(-10px); /* Updated to lift the entire container */
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for the container holding the cat breed information */
+
+.cat-info-container {
+    flex: 2;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Added margin to the right */
+    flex:2;
+}
+
+
+.breed-name {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Style for the <p> text */
+.breed-info p {
+    font-family: 'Andada Pro', serif; /* Use the same font family as the <h1> */
+    font-weight: 900; /* Make the text bold */
+    color: #000; /* Dark color for contrast */
+    font-size: 20px; /* Adjust the font size as needed */
+    background-color: #fff; /* Add a background color */
+    display: inline-block; /* Make the background fit the text */
+    padding: 10px; /* Add some padding */
+    border: 3px solid #000; /* Add a border for a brutalist look */
+    border-radius: 0; /* Optional: make the corners sharp */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Increase letter spacing */
+}
+
+
+
+
+/* Updated style for the sidebar */
+.sidebar {
+    font-family: 'Andada Pro', serif;
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 20px; /* Updated: make the corners rounded */
+}
+
+/* Updated style for the key facts section */
+.info-box {
+    border-radius: 15px; /* Updated: make the corners rounded */
+    overflow: hidden; /* Updated: hide the overflow content to maintain the rounded corners */
+}
+
+.info-box h2 {
+    font-weight: 900;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    padding: 10px; /* Updated: add some padding */
+    background-color: #000; /* Updated: add a background color */
+    color: #fff; /* Updated: change the text color for contrast */
+}
+
+.info-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-box li {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 5px 0;
+    border-bottom: 2px solid #000;
+}
+
+.info-box li:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+.facets-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px; /* Reduced padding */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.facet-box {
+    flex: 1;
+    padding: 10px; /* Reduced padding */
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 35px;
+    margin: 5px; /* Reduced margin */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    min-width: calc(30% - 10px); /* Reduced minimum width */
+    max-width: calc(30% - 10px); /* Added maximum width to control the size */
+}
+
+@media (max-width: 600px) {
+    .facet-box {
+        flex: 100%;
+        margin-bottom: 10px; /* Reduced margin */
+        min-width: 100%;
+        max-width: 100%; /* Ensure it takes full width on smaller screens */
+    }
+}
+
+.facet-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.facet-box h3 {
+    font-size: 20px; /* Reduced font size */
+    color: #000;
+    margin-bottom: 5px; /* Reduced margin */
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.facet-box p {
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px; /* Reduced font size */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for the list items in the "Need to Know" container */
+
+.need-to-know-container {
+    padding: 40px; /* Increased padding */
+    margin-top: 40px; /* Increased margin */
+    border-radius: 0; /* Removed border-radius for a more blocky look */
+    background-color: #333; /* Darker background for contrast */
+    color: #fff; /* Light text color for contrast */
+    box-shadow: none; /* Removed box shadow for flat design */
+    border: 5px solid #fff; /* Added border for more structure */
+}
+
+.need-to-know-container h2 {
+    font-size: 36px; /* Increased font size */
+    color: #fff; /* Light text color */
+    margin-bottom: 40px; /* Increased margin */
+    text-transform: uppercase; /* Capitalized text */
+    letter-spacing: 5px; /* Increased letter spacing */
+    font-weight: bold; /* Bold font weight */
+}
+
+.need-to-know-container ul {
+    list-style-type: none;
+    padding-left: 0;
+    border-top: 2px solid #fff; /* Added border for separation */
+    padding-top: 20px; /* Added padding for spacing */
+}
+
+.need-to-know-container li {
+    margin-bottom: 20px; /* Increased margin */
+    font-size: 20px; /* Increased font size */
+    position: relative;
+    padding-left: 50px; /* Increased padding */
+    font-weight: bold; /* Bold font weight */
+    border-bottom: 2px solid #fff; /* Added border for separation */
+    padding-bottom: 10px; /* Added padding for spacing */
+}
+
+.need-to-know-container li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; /* Increased size */
+    height: 30px; /* Increased size */
+    background-image: url('../images/cat.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(1); /* Inverted color for contrast */
+}
+
+
+
+
+
+
+
+/* Styles for the health information container */
+.health-info-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* Keeps the border-radius effect when content expands */
+    width: 60%; /* Adjusted the width */
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+    padding: 10px 40px; /* Adjusted padding to make it less tall */
+}
+
+.health-info-header,
+.health-info-content {
+    text-align: center; /* Centers the text inside the header and content */
+}
+
+.health-info-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the items horizontally */
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    cursor: pointer; /* Indicates the header is clickable */
+}
+
+.info-icon {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 50%; /* Makes the info icon circular */
+}
+
+.health-info-header h3 {
+    flex-grow: 1;
+}
+
+#toggle-icon {
+    margin-left: 10px;
+}
+
+.health-info-content p,
+.health-info-content ul {
+    margin-bottom: 10px;
+}
+
+.health-info-content {
+    display: none; 
+    padding: 20px;
+}
+
+.health-info-content.expanded {
+    max-height: 1000px; /* Increased max-height */
+    padding: 20px; 
+}
+
+
+
+
+
+
+
+/* Styles for the discover button in the intro section */
+
+.intro .logo-header .discover-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #000;
+    border-radius: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 20px; /* Added space above the button */
+    border: 3px solid #000; /* Add a border for a brutalist look */
+}
+
+/* Styles for the hover effect on the discover button */
+.intro .logo-header .discover-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+/* Existing CSS */
+.personality-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* ... (rest of your existing CSS) ... */
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+    .personality-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cat-image-container {
+        margin-right: 0;
+        margin-bottom: 20px; /* Add space between the image and text when stacked */
+        flex:1;
+    }
+
+    .personality-info-container {
+        width: 100%; /* Make the text container take the full width */
+        flex:2;
+    }
+}
+
+.personality-info-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.personality-info-container p {
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+/* Styles for the container holding the dropdown sections */
+
+.dropdowns-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Styles for the individual dropdown sections */
+.dropdown {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.red-font {
+    color: red;
+}
+
+/* Styles for the dropdown titles */
+
+.dropdown h3 {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 20px; /* Increase padding as needed */
+    border-top: 1px solid #ccc; /* Optional: add a border between the title and content */
+}
+
+
+
+/* Styles for the paragraphs in the dropdown content */
+.dropdown-content p {
+    margin: 0;
+}
+
+
+
+
+
+
+/* Styles for the paragraphs in the dropdown content , vet rating*/
+
+.ratings-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ratings-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ratings-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+/* 
+
+*,
+*:hover {
+    cursor: none !important;
+} */
+
+
+/* for mobile style */
+@media (max-width: 768px) {
+    .cat-breed-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cat-info-container,
+    .cat-image-container,
+    .sidebar {
+        width: 90%;
+        margin: 0;
+        flex:none;
+    }
+} 
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+.bold {
+    font-weight: 900; /* Make the text bold */
+    color: #000; /* Dark color for contrast */
+    font-size: 48px; /* Adjust the font size as needed */
+    font-family: 'Andada Pro', serif; /* Use a serif font for a brutalist look */
+}
+
+.regular {
+    font-weight: 400; /* Regular weight */
+    color: #000; /* Same color for consistency, adjust as needed */
+    font-size: 48px; /* Keep the font size consistent */
+    font-family: 'Andada Pro', serif; /* Use the same font family */
+}
+
+h1 {
+    background-color: #fff; /* Add a background color */
+    display: inline-block; /* Make the background fit the text */
+    padding: 10px; /* Add some padding */
+    border: 3px solid #000; /* Add a border for a brutalist look */
+    border-radius: 0; /* Optional: make the corners sharp */
+}
+
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 183, 0, 0.7), rgba(2, 48, 187, 0.7),  rgba(14, 255, 82, 0.7), rgba(241, 37, 37, 0.7));
+    background-size: 200% 200%;
+    opacity: 0.5;
+    z-index: -1;
+    animation: gradientMove 20s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 200% 200%;
+    }
+    25% {
+        background-position: -100% -10%;
+    }
+    50% {
+        background-position: 0 0;
+    }
+    75% {
+        background-position: -20 -40;
+    }
+    100% {
+        background-position: 0 200%;
+    }
+}
+
+
+
+
+/* for background mobile */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+.container {
+    min-height: 100%;
+    overflow: auto; /* or 'hidden' to hide overflow content */
+    /* Other styles */
+}
+
+body {
+    background-color: #f0f0f0; /* Adjust the color as needed */
+}
+
+
+
+
+/* for popout main cat image */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
