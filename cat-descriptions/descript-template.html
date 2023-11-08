@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../script.js"></script>
+
+    <!-- for cursor
+    <style type='text/css'>
+       *, body, a:hover {
+            cursor: url(http://www.zingerbugimages.com/cursors/tuxedo_cat.ani), 
+                    url(http://www.zingerbug.com/cursors/cursors/tuxedo_cat.gif), 
+                    progress !important;
+        }
+    </style> -->
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+    <title>Cat Breed Recommendation App</title>
+    <link rel="stylesheet" href="style2.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+   
+
+    <div class="intro">
+        <div class="logo-header">
+            <h4>
+                <h1><span class="bold">Cat</span> <span class="regular">Breed</span><span class="bold">Library</span></h1>
+            </h4>
+            <a href="../index.html" id="discoverMore">Discover More</a> <!-- Updated ID to match CSS -->
+        </div>
+    </div>
+    
+
+
+
+
+
+    <div class="cat-breed-container">
+        <div class="cat-image-container">
+            <img src="../images/bengal.jpg" id="myImg" alt="Bengal" class="cat-image modal-opener">
+        </div>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+
+        
+
+        <div class="cat-info-container">
+            <h1><span class="breed-name regular">Bengal</span> <span class="breed-name bold">Cat</span></h1>
+            <div class="breed-info">
+                <p>
+                    The Bengal cat is a domesticated cat breed created from hybrids of domestic cats,
+                    especially the spotted Egyptian Mau, with the Asian leopard cat (Prionailurus bengalensis).
+                    The breed name comes from the leopard cat's taxonomic name.
+                </p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="info-box">
+                <h2>Key Facts</h2>
+                <ul>
+                    <li>Size: Medium</li>
+                    <li>Coat: Short, Spotted</li>
+                    <li>Behaviour: Active, Playful</li>
+                    <!-- Add more key facts as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="facets-container">
+        <div class="facet-box">
+            <h3>Temperament</h3>
+            <p>Active, Playful</p>
+        </div>
+        <div class="facet-box">
+            <h3>Coat</h3>
+            <p>Short, Spotted</p>
+        </div>
+        <div class="facet-box">
+            <h3>Size</h3>
+            <p>Medium</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="need-to-know-container cat-icon-list">
+        <h2>The Need-to-Know</h2>
+        <ul>
+            <li>Benefits from an experienced owner</li>
+            <li>Needs high-level of enrichment</li>
+            <li>Highly active and inquisitive cat</li>
+            <li>Independent but friendly</li>
+            <li>Slightly talkative cat</li>
+            <li>Requires grooming once a week</li>
+            <li>Needs extensive outdoor space</li>
+            <li>Not ideal for family homes</li>
+            <li>Can be regularly left for a few hours</li>
+            <li>Needs a calm environment</li>
+            <li>Needs stimulated play</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="personality-container">
+        <div class="cat-image-container">
+            <img src="../images/bengal2.jpg" alt="Bengal" class="cat-image modal-opener">
+        </div>
+
+        <div class="personality-info-container">
+            <h2>Personality</h2>
+            <p>
+                Bengals make fabulous pets for experienced cat
+                 owners who love an active, curious and dog-like
+                  cat - and can keep them entertained with toys,
+                   games and plenty of environmental enrichment. No matter 
+                   their appeal, if you are after a cat who lies around 
+                   looking decorative and stays out of the way, 
+                   the Bengal is not for you! They are into everything, 
+                   highly amused by simple things such as a dripping tap or flowing water
+                    (watch them for knocking your water glass over to see
+                     the water spill!), they adore human company and will 
+                     play for hours if you are willing - and even if you 
+                     aren’t! This is not really a lap cat; they are simply too 
+                     busy with stuff and things to want to settle on your lap for long.
+                      Although not typically a noisy cat, the Bengal is capable of a loud and strident 
+                      cry when things are not going their way or they feel they are lacking attention.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+<div class = "side-by-side-container">  
+    <div class="health-info-container">
+        <div class="health-info-header">
+            <i class="info-icon">i</i>
+            <h3>Generally Healthy Breed <span id="toggle-icon">+</span></h3>
+        </div>
+        <div class="health-info-content" id="health-info-content">
+            <p><b>The Bengal cat breed is generally robust, however they can be prone to: 
+            </p></b>
+            <ul>
+                <li>Hypertrophic cardiomyopathy¹ which is a disease where the heart muscle becomes abnormally thick which means the heart cannot beat effectively.</li>
+                <li>Progressive retinal atrophy which is an inherited disorder where part of the eye degenerates and wastes away which can result in blindness.</li>
+                <li>Feline infectious peritonitis² which is an abnormal immune response to a viral infection.</li>
+                <li>Flat chested kitten syndrome which is a condition where the chest does not develop properly which can result in breathing difficulties.</li>
+                <li>Patellar luxation³ which is where the knee-caps slip temporarlily or permanently out of place.</li>
+                <li>Hip dysplasia³ which is where the hip joint does not develop normally.</li>
+                <li>Pyruvate kinase deficiency which is a disease that causes anaemia (death of red blood cells).</li>
+                <li>Peripheral neuropathy³ which is a disease affecting the nervous system.</li>
+
+                <b><p>Testing available:</p></b>
+                <li>DNA testing for pyruvate kinase deficiency and progressive retinal atrophy  which tests whether or not a cat has the potential to be affected by these conditions.</li>
+
+                <h5>¹M. Longeri et al, 'Myosin-Binding Protein C DNA Variants in Domestic Cats (A31P, A74T, R820W) and their Association with Hypertrophic Cardiomyopathy', 2013, Journal of Internal Veterinary Medicine
+                    ²L. D. Pesteanu-Somogyi, 'Prevalence of feline infectious peritonitis in specific cat breeds', Feb 2006, Journal of Feline Medicine and Surgery
+                    ³A. M. Martinez-Caja et al, 'Behavior and health issues in Bengal cats as perceived by their owners: A descriptive study', 2021, Journal of Veterinary Behavior </h5>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="dropdowns-container">
+
+        <div class="dropdown" onclick="toggleDropdown('vetRating')">
+            <h3 id="vetRating-title" class="red-font">Vet Rating <span id="vetRating-icon">+</span></h3>
+            <div class="dropdown-content" id="vetRating-content" style="display: none;">
+                <table class="ratings-table">
+                    <tr>
+                        <td>Family-friendly:</td>
+                        <td>1/5</td>
+                    </tr>
+                    <tr>
+                        <td>Playfulness:</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <td>Intelligence:</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <td>Tendency to Vocalise:</td>
+                        <td>2/5</td>
+                    </tr>
+                    <tr>
+                        <td>Likes Other Pets:</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <td>Grooming Needs:</td>
+                        <td>2/5</td>
+                    </tr>
+                    <tr>
+                        <td>Shedding:</td>
+                        <td>2/5</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Repeat similar blocks for other titles -->
+        <div class="dropdown" onclick="toggleDropdown('historyOrigins')">
+            <h3 id="historyOrigins-title" class="red-font">History and Origins <span id="historyOrigins-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="historyOrigins-content" style="display: none;">
+                <p>Content for History and Origins.</p>
+            </div>
+        </div>
+
+        <div class="dropdown" onclick="toggleDropdown('outdoorIndoor')">
+            <h3 id="outdoorIndoor-title" class="red-font">Outdoors or Indoors <span id="outdoorIndoor-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="outdoorIndoor-content" style="display: none;">
+                <p>Content for outdoorIndoor cat.</p>
+            </div>
+        </div>
+
+
+        <div class="dropdown" onclick="toggleDropdown('enrichmentNeeds')">
+            <h3 id="enrichmentNeeds-title" class="red-font">Enrichment and Specific Needs <span id="enrichmentNeeds-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="enrichmentNeeds-content" style="display: none;">
+                <p>Content for enrichment Needs.</p>
+            </div>
+        </div>
+
+
+        <div class="dropdown" onclick="toggleDropdown('nutrition')">
+            <h3 id="nutrition-title" class="red-font">Nutrition and Feeding <span id="nutrition-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="nutrition-content" style="display: none;">
+                <p>Nutrition and Feeding</p>
+            </div>
+        </div>
+
+        <div class="dropdown" onclick="toggleDropdown('grooming')">
+            <h3 id="grooming-title" class="red-font">Grooming <span id="grooming-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="grooming-content" style="display: none;">
+                <p>Content for grooming cat.</p>
+            </div>
+        </div>
+
+
+        <div class="dropdown" onclick="toggleDropdown('suitability')">
+            <h3 id="suitability-title" class="red-font">Suitability for Family Life <span id="suitability-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="suitability-content" style="display: none;">
+                <p>If you have a good sense of humour, a large home and older children who can respect a cat’s space,
+                     the Bengal makes an entertaining companion. If you prefer a cat who lies
+                      about looking decorative, is quiet and undemanding then the Bengal 
+                      is really not the cat for you!  </p>
+            </div>
+        </div>
+
+        <!-- Add similar blocks for the rest of the titles -->
+        <!-- ... -->
+
+    </div>
+</div>
+
+
+
+
+</body>
+
+
+</html>

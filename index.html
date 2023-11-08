@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Breeds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bubble.css">
+    <link rel="stylesheet" href="pagination.css">
+    <link rel="stylesheet" href="chatBox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+    
+
+    <!-- for cursor -->
+    <style type='text/css'>
+        body, a:hover {
+            cursor: url(http://www.zingerbugimages.com/cursors/tuxedo_cat.ani), 
+                    url(http://www.zingerbug.com/cursors/cursors/tuxedo_cat.gif), 
+                    progress !important; }
+    </style>
+
+</head>
+
+<body>
+
+    
+    
+    
+
+
+
+    <!-- start dark mode face -->
+    <!-- <div class="toggleBox">
+        <input class="checkbox" type="checkbox" id="checkbox" />
+        <label class="toggleBar" for="checkbox">
+            <div class="ball ballGradient"> -->
+                <!-- face awake -->
+                <!-- <div class="face faceAwake">
+                    <div class="eyes eyesLeft">
+                        <div class="eyesBall"></div>
+                    </div>
+                    <div class="eyes eyesRight">
+                        <div class="eyesBall"></div>
+                    </div>
+                    <div class="mouth">
+                        <div class="mouthLips"></div>
+                    </div>
+                </div> -->
+                <!-- end face awake -->
+                <!-- face sleep -->
+                <!-- <div class="face faceSleep">
+                    <div class="eyes eyesLeft">
+                        <div class="eyesBall"></div>
+                    </div>
+                    <div class="eyes eyesRight">
+                        <div class="eyesBall"></div>
+                    </div>
+                    <div class="mouth">
+                        <div class="mouthLips"></div>
+                    </div>
+                </div> -->
+                <!-- end dark mode face -->
+            <!-- </div>
+        </label>
+    </div> -->
+
+
+
+
+    <div class="container">
+        <header class="App-header">
+            <div class="popout-bubble">
+                <img src="https://bestanimations.com/Animals/Mammals/Cats/cats/cute-kitty-animated-gif-12.gif"
+                    alt="cat sleeping gif" class="cat-sleeping-gif" />
+                <h1><span class="bold">Cat</span> <span class="regular">Breed</span> <span class="bold">Library</span></h1>
+                <h2 class="styled-text">Discover cat breeds from around the world and get help finding your perfect pet</h2>
+                <h3 class="styled-text">Which Cat Breed Is Best For You?</h3>
+                <p class="styled-text summary">Explore Our Cat Breed Library and Discover Your Perfect Feline Companion!</p>
+            </div>
+        </header>
+    </div>
+    
+
+
+    <!-- save for later -->
+<!-- alphabet filter for cats -->
+<div id="alphabetFilter">
+    <button class="bubble-button" onclick="handleButtonClick('', this);">Show All</button>
+    <button class="bubble-button" onclick="handleButtonClick('A', this);">A</button>
+    <button class="bubble-button" onclick="handleButtonClick('B', this);">B</button>
+    <button class="bubble-button" onclick="handleButtonClick('C', this);">C</button>
+    <button class="bubble-button" onclick="handleButtonClick('D', this);">D</button>
+    <button class="bubble-button" onclick="handleButtonClick('E', this);">E</button>
+    <button class="bubble-button" onclick="handleButtonClick('F', this);">F</button>
+    <button class="bubble-button" onclick="handleButtonClick('G', this);">G</button>
+    <button class="bubble-button" onclick="handleButtonClick('H', this);">H</button>
+    <button class="bubble-button" onclick="handleButtonClick('I', this);">I</button>
+    <button class="bubble-button" onclick="handleButtonClick('J', this);">J</button>
+    <button class="bubble-button" onclick="handleButtonClick('K', this);">K</button>
+    <button class="bubble-button" onclick="handleButtonClick('L', this);">L</button>
+    <button class="bubble-button" onclick="handleButtonClick('M', this);">M</button>
+    <button class="bubble-button" onclick="handleButtonClick('N', this);">N</button>
+    <button class="bubble-button" onclick="handleButtonClick('O', this);">O</button>
+    <button class="bubble-button" onclick="handleButtonClick('P', this);">P</button>
+    <button class="bubble-button" onclick="handleButtonClick('Q', this);">Q</button>
+    <button class="bubble-button" onclick="handleButtonClick('R', this);">R</button>
+    <button class="bubble-button" onclick="handleButtonClick('S', this);">S</button>
+    <button class="bubble-button" onclick="handleButtonClick('T', this);">T</button>
+    <button class="bubble-button" onclick="handleButtonClick('U', this);">U</button>
+    <button class="bubble-button" onclick="handleButtonClick('V', this);">V</button>
+    <button class="bubble-button" onclick="handleButtonClick('W', this);">W</button>
+    <button class="bubble-button" onclick="handleButtonClick('X', this);">X</button>
+    <button class="bubble-button" onclick="handleButtonClick('Y', this);">Y</button>
+    <button class="bubble-button" onclick="handleButtonClick('Z', this);">Z</button>
+</div>
+
+
+
+
+
+
+
+
+    <!-- Container for the first row of three cat breed boxes -->
+    <div class="cat-breed-container">
+
+        <a href="cat-descriptions/descript-template.html" class="cat-breed-box-link breed">
+            <!-- Cat breed box 3 -->
+            <div class="cat-breed-box">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fanimalsadda.com%2Fwp-content%2Fuploads%2F2015%2F03%2FBengal-cat-13.jpg&f=1&nofb=1&ipt=6742ac819feee8007319dae7622c22bd32e1444f4ea978b1c5f89391ec18e199&ipo=images"
+                    alt="Bengal" class="cat-breed-image" />
+                <h3>Bengal</h3>
+            </div>
+        </a>
+
+        <a href="cat-descriptions/descript-template.html" class="cat-breed-box-link breed">
+            <!-- Cat breed box 1 -->
+            <div class="cat-breed-box">
+                <img src="https://cats.com/wp-content/uploads/2020/10/Beautiful-Red-Maine-Coon-768x512.jpg"
+                    alt="Maine Coon" class="cat-breed-image" />
+                <h3>Maine Coon</h3>
+            </div>
+        </a>
+
+        <a href="cat-descriptions/descript-template.html" class="cat-breed-box-link breed">
+            <!-- Cat breed box 2 -->
+            <div class="cat-breed-box">
+                <img src="images/siamese.jpg" alt="Siamese" class="cat-breed-image" />
+                <h3>Siamese</h3>
+            </div>
+        </a>
+
+        <a href="cat-descriptions/descript-template.html" class="cat-breed-box-link breed">
+            <!-- Cat breed box 3 -->
+            <div class="cat-breed-box">
+                <img src="images/asian.jpg"
+                    alt="Asian" class="cat-breed-image" />
+                <h3>Asian</h3>
+            </div>
+        </a>
+
+
+
+        <a href="cat-descriptions/descript-template.html" class="cat-breed-box-link breed">
+            <!-- Cat breed box 4 -->
+            <div class="cat-breed-box">
+                <img src="https://cats.com/wp-content/uploads/2020/10/Chausie-Cat-compressed-768x384.jpg"
+                    alt="Chausie Cat" class="cat-breed-image" />
+                <h3>Chausie Cat</h3>
+                
+            </div>
+        </a>
+
+        <a href="cat-descriptions/descript-template.html" class="cat-breed-box-link breed">
+            <div class="cat-breed-box">
+                <img src="https://www.purina.co.uk/sites/default/files/styles/ttt_image_690/public/2021-01/Abyssinian.1.webp?itok=bCrcqY3V"
+                    alt="Abyssinian" class="cat-breed-image" />
+                <h3>Abyssinian</h3>
+            </div>
+        </a>
+
+
+        <a href="cat-descriptions/descript-template.html" class="cat-breed-box-link breed">
+            <!-- Link to another breed's page -->
+            <div class="cat-breed-box">
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F--ItRXVMrmIs%2FTqctqgWzuLI%2FAAAAAAAABgE%2F4y2ZBTnDf7E%2Fs1600%2FSphynx%252BCats.jpg&f=1&nofb=1&ipt=ee623ef88f5e635731f3317e96313cb5ef9ac048928ad7534bf507298519125e&ipo=images"
+                    alt="Sphynx" class="cat-breed-image" />
+                <h3>Sphynx</h3>
+            </div>
+
+        </a>
+
+        <a href="cat-descriptions/descript-template.html" class="cat-breed-box-link breed">
+            <!-- Link to another breed's page -->
+            <div class="cat-breed-box">
+                <img src="images/wirehair.jpg"
+                    alt="Wirehair" class="cat-breed-image" />
+                <h3>American Wirehair Cat</h3>
+            </div>
+
+            <a href="cat-descriptions/descript-template.html" class="cat-breed-box-link breed">
+                <!-- Link to another breed's page -->
+                <div class="cat-breed-box">
+                    <img src="images/chinchilla.jpg"
+                        alt="Chinchilla" class="cat-breed-image" />
+                    <h3>Chinchilla</h3>
+                </div>
+
+
+
+            <!-- ADD MORE CAT BOXES HERE -->
+                <!-- EXAMPLE: -->
+            <!-- <a href="cat-descriptions/descript-template.html" class="cat-breed-box-link breed"> -->
+                <!-- Link to another breed's page -->
+                <!-- <div class="cat-breed-box"> -->
+                    <!-- <img src="images/wirehair.jpg"
+                        alt="Wirehair" class="cat-breed-image" />
+                    <h3>American Wirehair Cat</h3>
+                </div> -->
+
+
+
+
+        </a>
+        
+    </div>
+    
+
+    <!-- save for later -->
+    <div id="pagination">
+        <button class="bubble-button" onclick="prevPage()" id="prevBtn" disabled>Prev</button>
+        <span id="page-num"></span>
+        <button class="bubble-button" onclick="nextPage()" id="nextBtn">Next</button>
+    </div>
+    
+
+
+    <button id="toggle-chat-box">Toggle Chat</button>
+
+    <!-- Container for meow gpt vercal app -->
+    <div class="iframe-container hidden">
+        <iframe src="" allowfullscreen></iframe>
+    </div>
+
+   
+
+   
+
+</body>
+
+</html>

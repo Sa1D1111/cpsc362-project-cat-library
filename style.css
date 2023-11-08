@@ -1,0 +1,455 @@
+/* Updated Styles */
+body {
+    background: #D1C4E9; /* Light Purple */
+    color: #333; /* Dark text for contrast */
+    font-family: 'Andada Pro', serif;
+    transition: background 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+
+}
+
+ 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 183, 0, 0.7), rgba(2, 48, 187, 0.7),  rgba(14, 255, 82, 0.7), rgba(241, 37, 37, 0.7));
+    background-size: 200% 200%;
+    opacity: 0.5;
+    z-index: -1;
+    animation: gradientMove 20s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: -10% -10%;
+    }
+    25% {
+        background-position: -100% -10%;
+    }
+    50% {
+        background-position: -200 -200;
+    }
+    75% {
+        background-position: -20 -40;
+    }
+    100% {
+        background-position: 0 200%;
+    }
+}
+
+    
+
+
+
+.container {
+    background: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Andada Pro', serif;
+    color: #333;
+}
+
+.cat-breed-box {
+    border: 3px solid #000;
+    color: #000;
+}
+
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+
+/* .button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} */
+
+.button:hover {
+    background-color: #555;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-section {
+    padding: 50px;
+    background-color: #eee;
+}
+
+/* Cat Breed Boxes */
+.cat-breed-container {
+    flex: 1; /* Allow the boxes to take up remaining space */
+  /* background-color: #fcbbff; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Set to 3 columns per row */
+    gap: 20px; /* Spacing between grid items */
+    padding: 20px;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the grid container */
+    clear: both; /* Clear floats */
+    min-height: 80vh; /* Adjust as needed */
+}
+
+.cat-breed-box {
+    background-color: #C8E6C9; /* Light Green */
+    border: 1px solid #282825;
+    border-radius: 20px;
+    padding: 32px 24px;
+    transition: transform .25s cubic-bezier(.645,.045,.355,1), box-shadow .25s cubic-bezier(.645,.045,.355,1);
+    text-align: center;
+    box-shadow: 3px 3px #282825; 
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    
+}
+
+
+
+.cat-breed-box h3 {
+    font-size: 1em; /* Adjust font size as needed */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflow content */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    width: 100%; /* Full width of the parent container */
+}
+
+.cat-breed-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Set a fixed height */
+    overflow: auto; /* Make overflow content scrollable */
+}
+
+
+
+.cat-breed-box:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px #282825;
+}
+
+.cat-breed-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* .cat-breed-content {
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cat-breed-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+
+
+p {
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+
+
+.App-header {
+    text-align: left; /* Align the text to the left */
+}
+
+/* Updated styles for the cat sleeping gif */
+.cat-sleeping-gif {
+    float: right; /* Float the image to the right */
+    max-width: 200px; /* Set a max width for the image */
+    margin-left: 20px; /* Add some space between the image and the text */
+    margin-bottom: 20px; /* Add some space below the image */
+}
+
+
+/* Mobile view */
+@media (max-width: 600px) {
+    .cat-breed-box {
+        width: 150px;
+        height: 200px;
+    }
+
+    .cat-breed-box h3 {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .cat-breed-box {
+        flex-basis: calc(50% - 40px); /* Adjust the width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cat-breed-box {
+        flex-basis: calc(100% - 40px); /* Adjust the width for very small screens */
+    }
+}
+
+
+
+
+
+
+
+
+  
+
+  .popout-bubble {
+    padding: 11px;
+    border: 5px solid #000;
+    background-color: #fff; /* You can adjust the color to match your design */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    position: relative;
+    z-index: 2; /* Ensure it's above the gradient background */
+}
+
+
+
+
+
+
+.bold {
+    font-weight: 900; /* Make the text bold */
+    color: #000; /* Dark color for contrast */
+    font-size: 48px; /* Adjust the font size as needed */
+    font-family: 'Andada Pro', serif; /* Use a serif font for a brutalist look */
+}
+
+.regular {
+    font-weight: 400; /* Regular weight */
+    color: #000; /* Same color for consistency, adjust as needed */
+    font-size: 48px; /* Keep the font size consistent */
+    font-family: 'Andada Pro', serif; /* Use the same font family */
+}
+
+h1 {
+    background-color: #fff; /* Add a background color */
+    display: inline-block; /* Make the background fit the text */
+    padding: 10px; /* Add some padding */
+    border: 3px solid #000; /* Add a border for a brutalist look */
+    border-radius: 0; /* Optional: make the corners sharp */
+
+   
+}
+
+
+
+
+.styled-text {
+    color: #333333; /* Adjust the color as needed */
+    font-family: 'Roboto', sans-serif; /* Use the same font family as the header */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Increase letter spacing */
+}
+
+/* You can also style them individually if needed */
+h2.styled-text {
+    font-weight: 700; /* Make it bold */
+    font-size: 24px; /* Adjust the font size */
+    color: #ffc400; /* Adjust the color as needed */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, 1px 2px 0 #000, 1px 1px 0 #000; /* Add text outline */
+
+
+}
+
+h3.styled-text, p.styled-text {
+    font-weight: 400; /* Regular weight */
+    font-size: 20px; /* Adjust the font size */
+    
+}
+
+/* If you want the summary text to be different */
+p.summary {
+    font-size: 18px; /* Adjust the font size */
+    font-weight: 400; /* Regular weight */
+    color: #ff0000; /* Adjust the color as needed */
+    text-shadow: -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000; /* Add text outline */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* alphabet filter for cats style */
+#searchBar {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.active {
+    background-color: #ddd; /* or any other style to highlight the button */
+}
+
+
+
+
+
+
+#pagination {
+    text-align: center; /* Center the buttons horizontally */
+    width: 100%; /* Take up the full width of its parent */
+    margin: 20px 0; /* Add some vertical spacing */
+    clear: both; /* Clear any floats */
+}
+
+#pagination button {
+    display: inline-block; /* Make the buttons inline-level blocks */
+    margin: 0 10px; /* Add some horizontal spacing between the buttons */
+}
+
+#alphabetFilter {
+    display: flex;
+    flex-wrap: wrap; /* Allows the buttons to wrap to the next line if there isn't enough space */
+    justify-content: center; /* Horizontally centers the buttons */
+    align-items: center; /* Vertically centers the buttons, optional */
+}
+
+
+
+#alphabetFilter button {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFA12B;
+    display: block;
+    position: relative;
+    padding: 15px 15px;
+    margin: 2px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#alphabetFilter button:active {
+    top: 10px;
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+    box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+#alphabetFilter button.active {
+    background-color: #00eb6a; /* or any other style to highlight the button */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bubble-button {
+    padding: 5px 10px; /* Reduced padding for smaller size */
+    border-radius: 25px; /* Adjusted for smaller size */
+    background-color: #FFA12B;
+    color: #ffffff;
+    /* Removed the dashed border */
+    font-size: 12px; /* Reduced font size */
+    font-family: 'Andada Pro', serif;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5);
+}
+
+.bubble-button:hover {
+    transform: rotate(5deg);
+    background-color: #00f710;
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.5);
+}
+
+.bubble-button:active {
+    transform: scale(0.97);
+}
+
+
+
+
