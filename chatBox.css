@@ -9,8 +9,8 @@
     position: fixed;
     bottom: 0; /* Adjusted to ensure it's not cut off */
     right: 0; /* Adjusted to ensure it's not cut off */
-    height: 80%; /* Increased height */
-    width: 50%; /* Increased width */
+    height: 60%; /* Increased height */
+    width: 30%; /* Increased width */
     z-index: 2;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -22,6 +22,7 @@
     height: 100%;
     border: none;
     border-radius: 10px;
+
 }
 
 
