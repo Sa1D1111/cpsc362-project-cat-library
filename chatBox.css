@@ -7,14 +7,15 @@
 
 .iframe-container {
     position: fixed;
-    bottom: 0; /* Adjusted to ensure it's not cut off */
-    right: 0; /* Adjusted to ensure it's not cut off */
-    height: 60%; /* Increased height */
-    width: 30%; /* Increased width */
+    bottom: 0;
+    right: 0;
+    height: 52%; /* Adjust as needed */
+    width: 25.8%; /* Adjust as needed */
     z-index: 2;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: rgba(255, 255, 255, 0.9);
+    overflow: hidden; /* Hide the overflow */
 }
 
 .iframe-container iframe {
@@ -22,8 +23,9 @@
     height: 100%;
     border: none;
     border-radius: 10px;
-
 }
+
+
 
 
 #toggle-chat-box {
