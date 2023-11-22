@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../script.js"></script>
+
+
+    
+    <!-- for cursor -->
+    <style type='text/css'>
+        body, a:hover {
+            cursor: url(http://www.zingerbugimages.com/cursors/tuxedo_cat.ani), 
+                    url(http://www.zingerbug.com/cursors/cursors/tuxedo_cat.gif), 
+                    progress !important;
+        }
+    </style>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+    <title>Cat Breed Recommendation App</title>
+    <link rel="stylesheet" href="style2.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+
+
+    <div class="intro">
+        <div class="logo-header">
+            <h4>
+                <h1><span class="bold">Cat</span> <span class="regular">Breeds</span> </h1>
+            </h4>
+            <a href="../index.html" class="discover-button">Discover More</a> <!-- Updated class name -->
+        </div>
+    </div>
+
+
+
+
+
+    <div class="cat-breed-container">
+        <div class="cat-image-container">
+            <img src="../images/bombay1.png" id="myImg" alt="Cat" class="cat-image">
+        </div>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <div class="cat-info-container">
+            <h1 class="breed-name">Bombay Cat</h1>
+            <div class="breed-info">
+                <p>
+                    The Bombay cat breed was founded by Nikki Horner, who has the intention 
+                    of developing a cat similar to a panther. She crossed a black American 
+                    shorthair male with a female Burmese. 
+                </p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="info-box">
+                <h2>Key Facts</h2>
+                <ul>
+                    <li>Size: Medium</li>
+                    <li>Coat: Short, Black/Deep Chocolate</li>
+                    <li>Behaviour: Intelligent, Playful, Social</li>
+                    <!-- Add more key facts as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="facets-container">
+        <div class="facet-box">
+            <h3>Temperament</h3>
+            <p>Intelligent, Playful, Social</p>
+        </div>
+        <div class="facet-box">
+            <h3>Coat</h3>
+            <p>Short, Black/Deep Chocolate</p>
+        </div>
+        <div class="facet-box">
+            <h3>Size</h3>
+            <p>Medium</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="need-to-know-container">
+        <h2>The Need-to-Know</h2>
+        <ul>
+            <li>Great for first-time cat owners</li>
+            <li>Needs high-level of enrichment including simulated hunting games and interactive play</li>
+            <li>Playful and curious cat</li>
+            <li>Independent but friendly</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="personality-container">
+        <div class="cat-image-container">
+            <img src="../images/kitty.png" alt="Another Cat" class="cat-image">
+        </div>
+
+        <div class="personality-info-container">
+            <h2>Personality</h2>
+            <p>
+               Bombays are active, curious cats that can also adapt easily to change. This cat has a 
+               warm, loving, and friendly personality. It gets along well with other pets as long as they
+               understand that the Bombay is the "top cat." Bombays thrive in a loving environment that makes them
+               feel they are part of the family. They are also nicknamed the "velcro kitty" because it likes to stick close to its special 
+               human! 
+
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="health-info-container">
+        <div class="health-info-header">
+            <i class="info-icon">i</i>
+            <h3>Generally Healthy Breed <span id="toggle-icon">+</span></h3>
+        </div>
+        <div class="health-info-content" id="health-info-content">
+            <p>The Bombay cat breed may be prone to:</p>
+            <ul>
+                <li>Hypertrophic cardiomyopathy which causes thickening of the 
+                    heart walls and is the most common form of heart disease in cats.
+                </li>
+                <li>Respiratory issues and congestion, which is common in 
+                    breeds with shorter noses. 
+                </li>
+            </ul>
+            <p>Testing available:</p>
+            <p></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="dropdowns-container">
+
+        <div class="dropdown" onclick="toggleDropdown('vetRating')">
+            <h3 id="vetRating-title" class="red-font">Vet Rating <span id="vetRating-icon">+</span></h3>
+            <div class="dropdown-content" id="vetRating-content" style="display: none;">
+                <table class="ratings-table">
+                    <tr>
+                        <td>Family-friendly:</td>
+                        <td>3.5/5</td>
+                    </tr>
+                    <tr>
+                        <td>Playfulness:</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Intelligence:</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Tendency to Vocalise:</td>
+                        <td>2/5</td>
+                    </tr>
+                    <tr>
+                        <td>Likes Other Pets:</td>
+                        <td>2.5/5</td>
+                    </tr>
+                    <tr>
+                        <td>Grooming Needs:</td>
+                        <td>2/5</td>
+                    </tr>
+                    <tr>
+                        <td>Shedding:</td>
+                        <td>2/5</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Repeat similar blocks for other titles -->
+        <div class="dropdown" onclick="toggleDropdown('historyOrigins')">
+            <h3 id="historyOrigins-title" class="red-font">History and Origins <span id="historyOrigins-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="historyOrigins-content" style="display: none;">
+                <p>Content for History and Origins.</p>
+            </div>
+        </div>
+
+        <div class="dropdown" onclick="toggleDropdown('outdoorIndoor')">
+            <h3 id="outdoorIndoor-title" class="red-font">Outdoors or Indoors <span id="outdoorIndoor-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="outdoorIndoor-content" style="display: none;">
+                <p>Content for outdoorIndoor cat.</p>
+            </div>
+        </div>
+
+
+        <div class="dropdown" onclick="toggleDropdown('enrichmentNeeds')">
+            <h3 id="enrichmentNeeds-title" class="red-font">Enrichment and Specific Needs <span id="enrichmentNeeds-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="enrichmentNeeds-content" style="display: none;">
+                <p>Content for enrichment Needs.</p>
+            </div>
+        </div>
+
+
+        <div class="dropdown" onclick="toggleDropdown('nutrition')">
+            <h3 id="nutrition-title" class="red-font">Nutrition and Feeding <span id="nutrition-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="nutrition-content" style="display: none;">
+                <p>Nutrition and Feeding</p>
+            </div>
+        </div>
+
+        <div class="dropdown" onclick="toggleDropdown('grooming')">
+            <h3 id="grooming-title" class="red-font">Grooming <span id="grooming-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="grooming-content" style="display: none;">
+                <p>Content for grooming cat.</p>
+            </div>
+        </div>
+
+
+        <div class="dropdown" onclick="toggleDropdown('suitability')">
+            <h3 id="suitability-title" class="red-font">Suitability for Family Life <span id="suitability-icon">+</span>
+            </h3>
+            <div class="dropdown-content" id="suitability-content" style="display: none;">
+                <p>If you have a good sense of humour, a large home and older children who can respect a cat’s space,
+                     the Bengal makes an entertaining companion. If you prefer a cat who lies
+                      about looking decorative, is quiet and undemanding then the Bengal 
+                      is really not the cat for you!  </p>
+            </div>
+        </div>
+
+        <!-- Add similar blocks for the rest of the titles -->
+        <!-- ... -->
+
+    </div>
+
+
+
+
+
+</body>
+
+
+</html>

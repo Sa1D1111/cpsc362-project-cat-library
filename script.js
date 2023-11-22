@@ -160,6 +160,15 @@ function handleButtonClick(letter, buttonElement) {
 
 
 
+// for toggle chatbox
+document.getElementById('toggle-chat-box').addEventListener('click', function() {
+    var iframeContainer = document.querySelector('.iframe-container');
+    iframeContainer.classList.toggle('active');
+  });
+  
+
+
+
 
 
 

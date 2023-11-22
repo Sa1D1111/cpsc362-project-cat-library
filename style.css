@@ -418,15 +418,6 @@ p.summary {
 
 
 
-
-
-
-
-
-
-
-
-
 .bubble-button {
     padding: 5px 10px; /* Reduced padding for smaller size */
     border-radius: 25px; /* Adjusted for smaller size */
@@ -449,6 +440,28 @@ p.summary {
 .bubble-button:active {
     transform: scale(0.97);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
