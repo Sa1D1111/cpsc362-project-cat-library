@@ -283,6 +283,8 @@ a, button, [onclick], .modal-opener {
 
 
 
+
+
 /* Styles for the health information container */
 .health-info-container {
     font-family: 'Lato', sans-serif;
@@ -329,6 +331,7 @@ a, button, [onclick], .modal-opener {
     padding: 10px 20px;
     background-color: #0abcad;
     cursor: pointer !important;
+    opacity: 80%;
 
 }
 
